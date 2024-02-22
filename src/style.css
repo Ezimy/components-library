@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.badge{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid black;
+  height: 1.5rem;
+  width: 4.1875rem;
+  font-size: 0.875em;
+}
