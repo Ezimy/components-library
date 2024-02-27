@@ -1,7 +1,7 @@
 import Testimonial from "./Testimonial"
 import TestimonialQuote from "./TestimonialQuote"
 import TestimonialAuthor from "./TestimonialAuthor"
-import TestimonialPosition from "./TestimonialRole"
+import TestimonialPosition from "./TestimonialPosition"
 import TestimonialLogo from "./TestimonialLogo"
 
 
