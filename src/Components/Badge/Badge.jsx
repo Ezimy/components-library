@@ -1,7 +1,9 @@
 import React from "react";
-export default function Badge({children}){
+import classNames from "classnames";
+export default function Badge({children, theme="gray", shape= "pill", className, ...rest}){
+    const classes = classNames("badge", `badge-${shape}`, `badge-${theme}`, className)
     return(
-        <div className="badge">
+        <div className={classes} {...rest}>
             {children}
         </div>
     )
