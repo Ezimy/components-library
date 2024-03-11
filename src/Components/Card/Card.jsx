@@ -2,10 +2,9 @@ import React from "react"
 
 const CardContext = React.createContext()
 
-export default function Card({children, backgroundColor, style, ...rest}) {
-    const styles = {...style, backgroundColor}
+export default function Card({children}) {
     return (
-            <div className="card" {...rest} style={styles}>
+            <div className="card">
                 {children}
             </div>
     )

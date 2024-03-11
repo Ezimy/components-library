@@ -4,13 +4,14 @@ import TestimonialImg from "./TestimonialImg"
 const TestimonialContext = React.createContext()
 
 
-export default function Testimonial({img, children, backgroundColor, style}) {
-    const styles = {...style, backgroundColor}
+export default function Testimonial({img, children}) {
     return (
         <TestimonialContext.Provider value={{img}}>
-            <div className={img ? "testimonial" : "img-testimonial"} style={styles}>
+            <div className={`testimonial ${img ? "img-testimonial" : "no-img-testimonial"}`}>
                 <TestimonialImg />
+                <div className={img ? "img-testimonial-text" : "no-img-testimonial-text"}>
                 {children}
+                </div>
             </div>
         </TestimonialContext.Provider>
     )

@@ -1,9 +1,8 @@
 import React from "react"
 
-export default function CardTitle({children, color, style, ...rest}) {
-    const titleStyles = {...style, color}
+export default function CardTitle({children}) {
     return (
-        <div className="card-title" {...rest} style={titleStyles}>
+        <div className="card-title">
             {children}
         </div>
     )

@@ -8,7 +8,7 @@ export default function TestimonialQuote({children}) {
     return (
         <div className="testimonial-quote">
             <ImQuotesLeft 
-                className={img? "testimonial-quote-svg" : "img-testimonial-quote-svg"}
+                className={img? "img-testimonial-quote-svg":"testimonial-quote-svg"}
             />
             {children}
         </div>

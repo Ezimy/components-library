@@ -1,8 +1,8 @@
 import Banner from "./Banner"
 import BannerTitle from "./BannerTitle"
-import BannerContent from "./BannerContent"
+import BannerText from "./BannerText"
 
 Banner.Title = BannerTitle
-Banner.Content = BannerContent
+Banner.Text = BannerText
 
 export default Banner

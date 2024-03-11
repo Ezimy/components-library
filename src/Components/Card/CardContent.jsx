@@ -1,9 +1,8 @@
 import React from "react"
 
-export default function CardContent({children, color, style, ...rest}) {
-    const contentStyles = {...style, color}
+export default function CardContent({children}) {
     return (
-        <div className="card-content" {...rest} style={contentStyles}>
+        <div className="card-content">
             {children}
         </div>
     )

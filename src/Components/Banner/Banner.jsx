@@ -4,7 +4,7 @@ import classNames from "classnames"
 
 const BannerContext = React.createContext()
 
-export default function Banner({children, theme = "success", className, customStyle, customIcon, ...rest}) {
+export default function Banner({children, theme = "neutral", className, customStyle, ...rest}) {
     const {icon, iconColor, backgroundColor} = data[theme]
     const styles = customStyle ? {...customStyle, backgroundColor} : {backgroundColor}
     const classes = classNames("banner", className)
@@ -14,9 +14,9 @@ export default function Banner({children, theme = "success", className, customSt
         <BannerContext.Provider value={ {...data[theme]} }>
             <div className={classes} style={styles} {...rest}>
                 <div style={iconStyles}>
-                    {customIcon ? customIcon : icon}
+                    {icon}
                 </div>
-                <div>
+                <div className="banner-content">
                     {children}
                 </div>
             </div>

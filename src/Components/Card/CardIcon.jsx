@@ -1,10 +1,8 @@
 import React from "react"
-import { FaLaugh } from "react-icons/fa"
 
-export default function CardIcon({children = <FaLaugh />, backgroundColor}) {
-    const iconStyles = backgroundColor ? {backgroundColor} : null
+export default function CardIcon({children}) {
     return (
-        <div className="card-icon-container" style={iconStyles}>
+        <div className="card-icon-container">
             {children}
         </div>
     )
